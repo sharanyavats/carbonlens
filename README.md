@@ -58,9 +58,20 @@ Full methodology documentation coming soon. Initial approach:
 
 ## Data Sources
 
-- Power grid carbon intensity: [To be determined - researching APIs]
-- AI model specifications: Research papers and technical documentation
-- Hardware efficiency: GPU manufacturer specifications
+### Carbon Intensity
+- **Electricity Maps** - Real-time grid carbon intensity (electricitymaps.com)
+- **U.S. EPA eGRID** - Regional carbon intensity data (epa.gov/egrid)
+- **WattTime API** - Marginal emissions data for California region
+
+### AI Model Specifications
+- Patterson, D., et al. (2021). "Carbon Emissions and Large Neural Network Training." arXiv:2104.10350
+- Luccioni, A., et al. (2023). "Power Hungry Processing: Watts Driving the Cost of AI Deployment?" arXiv:2311.16863
+- Strubell, E., et al. (2019). "Energy and Policy Considerations for Deep Learning in NLP." ACL Anthology
+- NVIDIA Technical Specifications - Official GPU TDP values
+
+### Methodology
+- Standard electrical engineering calculations (P = E/t)
+- Data center PUE estimates from cloud provider sustainability reports
 
 ## How to Cite
 ```
