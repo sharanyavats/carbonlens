@@ -1,0 +1,68 @@
+{
+  "models": [
+    {
+      "name": "ChatGPT-4",
+      "provider": "OpenAI",
+      "parameters": "1.76T",
+      "gpu": "A100",
+      "gpu_power_watts": 400,
+      "utilization": 0.8,
+      "efficiency_factor": 1.3,
+      "estimated_power_watts": 416,
+      "tokens_per_second": 50
+    },
+    {
+      "name": "ChatGPT-3.5",
+      "provider": "OpenAI",
+      "parameters": "175B",
+      "gpu": "V100",
+      "gpu_power_watts": 300,
+      "utilization": 0.85,
+      "efficiency_factor": 1.3,
+      "estimated_power_watts": 331,
+      "tokens_per_second": 100
+    },
+    {
+      "name": "Claude",
+      "provider": "Anthropic",
+      "parameters": "~500B",
+      "gpu": "A100",
+      "gpu_power_watts": 400,
+      "utilization": 0.8,
+      "efficiency_factor": 1.3,
+      "estimated_power_watts": 416,
+      "tokens_per_second": 60
+    },
+    {
+      "name": "Gemini Pro",
+      "provider": "Google",
+      "parameters": "~500B",
+      "gpu": "TPUv5",
+      "gpu_power_watts": 350,
+      "utilization": 0.8,
+      "efficiency_factor": 1.3,
+      "estimated_power_watts": 364,
+      "tokens_per_second": 70
+    },
+    {
+      "name": "Midjourney",
+      "provider": "Midjourney",
+      "parameters": "N/A",
+      "gpu": "A100",
+      "gpu_power_watts": 400,
+      "utilization": 0.9,
+      "efficiency_factor": 1.4,
+      "estimated_power_watts": 504,
+      "note": "Image generation - higher power usage"
+    }
+  ],
+  "carbon_intensity_reference": {
+    "atlanta_peak": 450,
+    "atlanta_offpeak": 250,
+    "california_peak": 180,
+    "california_offpeak": 120,
+    "texas_peak": 400,
+    "texas_offpeak": 300,
+    "note": "gCO2/kWh - these are example values, will be replaced with real-time data"
+  }
+}
